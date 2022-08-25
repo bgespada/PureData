@@ -1,0 +1,32 @@
+#N canvas 1013 393 450 300 12;
+#X obj 16 13 inlet count;
+#X obj 16 39 bng 15 250 50 0 empty empty Count 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 16 107 int 1;
+#X obj 58 107 + 1;
+#X obj 219 13 inlet reset;
+#X obj 219 39 bng 15 250 50 0 empty empty Reset 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 16 155 % 8;
+#X floatatom 16 203 5 0 0 0 - - - 0;
+#X obj 16 226 outlet counter;
+#X obj 304 13 loadbang;
+#X msg 219 59 0;
+#X msg 210 114 8;
+#X obj 104 13 inlet loopValue;
+#X floatatom 104 106 5 0 0 0 - - - 0;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 2 0 6 0;
+#X connect 3 0 2 1;
+#X connect 4 0 5 0;
+#X connect 5 0 10 0;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 9 0 5 0;
+#X connect 9 0 11 0;
+#X connect 10 0 2 0;
+#X connect 11 0 6 1;
+#X connect 12 0 13 0;
+#X connect 13 0 6 1;
