@@ -45,6 +45,8 @@
 #X obj 355 304 outlet digitalOutput3;
 #X obj 523 304 outlet digitalOutput4;
 #X obj 706 191 outlet index;
+#X text 349 84 Loop throught 16 values and set decimal to digital value
+;
 #X connect 0 0 4 0;
 #X connect 1 0 10 0;
 #X connect 1 0 3 0;
