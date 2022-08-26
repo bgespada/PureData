@@ -1,0 +1,8 @@
+#N canvas 704 113 450 300 12;
+#X obj 22 62 oscilloscope~;
+#X obj 22 17 osc~ 440;
+#X obj 112 28 dspOnOff;
+#X obj 112 10 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X connect 1 0 0 0;
+#X connect 3 0 2 0;
