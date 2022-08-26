@@ -1,0 +1,13 @@
+#N canvas 671 23 731 443 12;
+#X msg 19 151 \; pd dsp 1;
+#X msg 105 151 \; pd dsp 0;
+#X obj 56 86 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000
+0 1;
+#X obj 56 106 sel 1;
+#X obj 56 61 inlet;
+#X obj 122 63 loadbang;
+#X connect 2 0 3 0;
+#X connect 3 0 0 0;
+#X connect 3 1 1 0;
+#X connect 4 0 2 0;
+#X connect 5 0 2 0;
