@@ -1,10 +1,25 @@
-#N canvas 839 366 702 483 12;
-#X obj 211 162 kick909;
-#X obj 210 222 dac~;
+#N canvas 956 158 1010 615 12;
+#X obj 32 445 dac~;
 #X obj 140 28 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000 0 1;
 #X obj 140 77 clockBpm 120, f 41;
-#X connect 0 0 1 0;
-#X connect 0 0 1 1;
-#X connect 2 0 3 0;
-#X connect 3 2 0 0;
+#X obj 211 162 kick909gui;
+#X obj 5 3 dspOnOff;
+#X obj 32 414 catch~;
+#X obj 211 377 throw~ kick;
+#X obj 524 303 catch~ kick;
+#X obj 524 327 simpleDelay, f 34;
+#X obj 524 351 throw~;
+#X obj 644 185 vsl 15 128 0 2000 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X obj 755 184 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X connect 1 0 2 0;
+#X connect 2 2 3 0;
+#X connect 3 0 6 0;
+#X connect 5 0 0 0;
+#X connect 5 0 0 1;
+#X connect 7 0 8 0;
+#X connect 8 0 9 0;
+#X connect 10 0 8 1;
+#X connect 11 0 8 2;
