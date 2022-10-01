@@ -1,4 +1,4 @@
-#N canvas 1172 412 1030 626 12;
+#N canvas 1077 416 647 626 12;
 #X obj 10 267 kick909, f 66;
 #X obj 302 14 inlet;
 #X text 13 10 trigger;
@@ -9,7 +9,7 @@
 #X text 14 202 out;
 #X text 69 203 kick 909;
 #X obj 20 186 hsl 128 15 0 1 0 1 \$0-vol \$1-vol volume -2 -5 0 10
-#ff8300 #000000 #000000 8400 1;
+#ff8300 #000000 #000000 8600 0;
 #X obj 57 299 r \$0-vol;
 #X floatatom 57 323 5 0 0 0 - - - 0;
 #X obj 19 588 outlet~;
@@ -18,40 +18,38 @@
 #X obj 218 13 r~ \$0-audio;
 #X obj 101 236 r \$0-pow;
 #X obj 19 158 hsl 128 15 0.5 3 1 1 \$0-pow \$1-pow pow -2 -5 0 10 #c6feff
-#000000 #000000 0 1;
-#X obj 19 73 hsl 128 15 0 8 0 0 \$0-res \$1-res resonance -2 -5 0 10
-#c6ffc7 #000000 #000000 0 1;
+#000000 #000000 9600 0;
+#X obj 19 73 hsl 128 15 0 4 0 0 \$0-res \$1-res resonance -2 -5 0 10
+#c6ffc7 #000000 #000000 0 0;
 #X obj 193 234 r \$0-bobFreq;
 #X obj 285 234 r \$0-res;
-#X obj 19 44 hsl 128 15 10 20000 1 1 \$0-bobFreq \$1-bobFreq filter\ frequency
--2 -5 0 10 #c6ffc7 #000000 #000000 12700 1;
+#X obj 19 44 hsl 128 15 10 20000 1 1 \$0-bobFreq \$1-bobFreq filter\\\ frequency
+-2 -5 0 10 #c6ffc7 #000000 #000000 12700 0;
 #X obj 188 299 r \$0-bobFreq;
 #X obj 280 299 r \$0-res;
 #X floatatom 188 323 11 0 0 0 - - - 0;
 #X floatatom 280 323 5 0 0 0 - - - 0;
 #X obj 122 299 r \$0-pow;
 #X floatatom 122 323 8 0 0 0 - - - 0;
-#X obj 561 460 loadbang;
-#X obj 496 508 s \$1-vol;
-#X msg 496 484 0.6;
-#X obj 496 460 loadbang;
-#X msg 561 484 1.5;
-#X obj 561 508 s \$1-pow;
-#X obj 719 460 loadbang;
-#X obj 626 460 loadbang;
-#X msg 626 484 20000;
-#X obj 626 508 s \$1-bobFreq;
-#X obj 719 508 s \$1-bobRes;
-#X msg 719 484 0;
-#X text 510 431 init values;
-#X obj 107 12 bng 15 250 50 0 empty empty panic! 17 7 0 10 #ff8300
-#000000 #000000;
-#X msg 220 49 0;
-#X obj 220 73 s \$1-vol;
+#X obj 78 444 loadbang;
+#X obj 13 492 s \$1-vol;
+#X msg 13 468 0.6;
+#X obj 13 444 loadbang;
+#X msg 78 468 1.5;
+#X obj 78 492 s \$1-pow;
+#X obj 236 444 loadbang;
+#X obj 143 444 loadbang;
+#X msg 143 468 20000;
+#X obj 143 492 s \$1-bobFreq;
+#X obj 236 492 s \$1-bobRes;
+#X msg 236 468 0;
+#X text 27 415 init values;
+#X obj 107 12 bng 15 250 50 0 empty empty empty 17 7 0 10 #ff8300 #000000
+#000000;
 #X obj 19 102 hsl 128 15 10 3000 0 0 \$0-noiseFilter \$1-noiseFilter
-noise\ filter -2 -5 0 10 #c7c6ff #000000 #000000 0 1;
-#X obj 20 131 hsl 128 15 4 1000 0 0 \$0-noiseTail \$1-noiseTail noise\ tail
--2 -5 0 10 #c7c6ff #000000 #000000 0 1;
+noise\\\ filter -2 -5 0 10 #c7c6ff #000000 #000000 0 0;
+#X obj 20 131 hsl 128 15 4 1000 0 0 \$0-noiseTail \$1-noiseTail noise\\\ tail
+-2 -5 0 10 #c7c6ff #000000 #000000 0 0;
 #X obj 377 234 r \$0-noiseFilter;
 #X connect 0 0 6 0;
 #X connect 1 0 3 0;
@@ -75,7 +73,6 @@ noise\ filter -2 -5 0 10 #c7c6ff #000000 #000000 0 1;
 #X connect 35 0 36 0;
 #X connect 36 0 37 0;
 #X connect 39 0 38 0;
-#X connect 41 0 42 0;
-#X connect 42 0 43 0;
-#X connect 46 0 0 4;
+#X connect 41 0 3 0;
+#X connect 44 0 0 4;
 #X coords 0 -1 1 1 200 210 2 10 10;

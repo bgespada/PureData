@@ -1,0 +1,42 @@
+#N canvas 848 238 681 442 12;
+#X obj 26 38 inlet;
+#X obj 70 38 loadbang;
+#X text 25 10 PARAM 1: Select input to read;
+#X obj 26 92 select 1 2 3 4;
+#X obj 26 246 r bela_digitalIn26;
+#X obj 26 296 spigot;
+#X obj 176 296 spigot;
+#X obj 176 246 r bela_digitalIn25;
+#X obj 326 296 spigot;
+#X obj 476 296 spigot;
+#X obj 326 246 r bela_digitalIn24;
+#X obj 476 246 r bela_digitalIn23;
+#X obj 213 385 outlet;
+#X obj 70 62 f \$1;
+#X obj 26 116 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 49 116 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 73 116 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 97 116 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X connect 0 0 3 0;
+#X connect 1 0 13 0;
+#X connect 3 0 14 0;
+#X connect 3 1 15 0;
+#X connect 3 2 16 0;
+#X connect 3 3 17 0;
+#X connect 4 0 5 0;
+#X connect 5 0 12 0;
+#X connect 6 0 12 0;
+#X connect 7 0 6 0;
+#X connect 8 0 12 0;
+#X connect 9 0 12 0;
+#X connect 10 0 8 0;
+#X connect 11 0 9 0;
+#X connect 13 0 3 0;
+#X connect 14 0 5 1;
+#X connect 15 0 6 1;
+#X connect 16 0 8 1;
+#X connect 17 0 9 1;
