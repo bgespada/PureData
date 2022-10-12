@@ -1,4 +1,4 @@
-#N canvas 723 461 691 422 12;
+#N canvas 783 349 691 422 12;
 #X obj 116 38 inlet;
 #X obj 160 38 loadbang;
 #X text 115 10 PARAM 1: Select input to read;
@@ -11,7 +11,10 @@
 #X obj 16 263 expr 60000 / $f1;
 #X obj 16 287 i;
 #X obj 16 333 outlet;
-#X obj 116 92 pepperReadInput;
+#X obj 116 92 pepperReadDigital;
+#X obj 232 333 outlet;
+#X text 230 357 Value;
+#X text 16 357 BPM;
 #X connect 0 0 12 0;
 #X connect 1 0 3 0;
 #X connect 3 0 12 0;
@@ -24,3 +27,4 @@
 #X connect 9 0 10 0;
 #X connect 10 0 11 0;
 #X connect 12 1 4 1;
+#X connect 12 3 13 0;

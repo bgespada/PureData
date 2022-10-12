@@ -1,0 +1,100 @@
+#N canvas 399 35 771 925 12;
+#X obj 235 104 sel 1 2 3 4 5 6 7 8 9 10;
+#X obj 196 335 spigot;
+#X obj 196 636 s bela_digitalOut17;
+#X obj 235 315 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 196 38 inlet;
+#X obj 240 38 loadbang;
+#X obj 240 62 f \$1;
+#X text 195 10 PARAM 1: Select led to write;
+#X obj 416 38 inlet;
+#X obj 460 38 loadbang;
+#X obj 460 62 f \$2;
+#X text 415 10 PARAM 2: Select value to write 0 or 1;
+#X obj 460 86 clip 0 1;
+#X obj 460 110 s \$0-value;
+#X obj 153 275 r \$0-value;
+#X obj 251 295 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 268 275 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 284 255 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 301 235 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 317 215 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 334 195 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 350 175 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 367 155 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 383 135 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 212 365 spigot;
+#X obj 229 395 spigot;
+#X obj 245 425 spigot;
+#X obj 262 455 spigot;
+#X obj 278 485 spigot;
+#X obj 295 515 spigot;
+#X obj 311 545 spigot;
+#X obj 328 575 spigot;
+#X obj 344 605 spigot;
+#X obj 212 656 s bela_digitalOut18;
+#X obj 229 676 s bela_digitalOut20;
+#X obj 245 696 s bela_digitalOut13;
+#X obj 262 716 s bela_digitalOut14;
+#X obj 278 736 s bela_digitalOut11;
+#X obj 294 756 s bela_digitalOut12;
+#X obj 310 776 s bela_digitalOut15;
+#X obj 327 796 s bela_digitalOut16;
+#X obj 342 816 s bela_digitalOut19;
+#X connect 0 0 3 0;
+#X connect 0 1 15 0;
+#X connect 0 2 16 0;
+#X connect 0 3 17 0;
+#X connect 0 4 18 0;
+#X connect 0 5 19 0;
+#X connect 0 6 20 0;
+#X connect 0 7 21 0;
+#X connect 0 8 22 0;
+#X connect 0 9 23 0;
+#X connect 1 0 2 0;
+#X connect 3 0 1 1;
+#X connect 4 0 0 0;
+#X connect 5 0 6 0;
+#X connect 6 0 0 0;
+#X connect 8 0 12 0;
+#X connect 9 0 10 0;
+#X connect 10 0 12 0;
+#X connect 12 0 13 0;
+#X connect 14 0 1 0;
+#X connect 14 0 24 0;
+#X connect 14 0 25 0;
+#X connect 14 0 26 0;
+#X connect 14 0 27 0;
+#X connect 14 0 28 0;
+#X connect 14 0 29 0;
+#X connect 14 0 30 0;
+#X connect 14 0 31 0;
+#X connect 14 0 32 0;
+#X connect 15 0 24 1;
+#X connect 16 0 25 1;
+#X connect 17 0 26 1;
+#X connect 18 0 27 1;
+#X connect 19 0 28 1;
+#X connect 20 0 29 1;
+#X connect 21 0 30 1;
+#X connect 22 0 31 1;
+#X connect 23 0 32 1;
+#X connect 24 0 33 0;
+#X connect 25 0 34 0;
+#X connect 26 0 35 0;
+#X connect 27 0 36 0;
+#X connect 28 0 37 0;
+#X connect 29 0 38 0;
+#X connect 30 0 39 0;
+#X connect 31 0 40 0;
+#X connect 32 0 41 0;

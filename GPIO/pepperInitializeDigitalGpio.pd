@@ -1,0 +1,9 @@
+#N canvas 234 234 450 300 12;
+#X obj 62 35 loadbang;
+#X obj 62 128 s bela_setDigital;
+#X msg 62 65 in 26 \, in 25 \, in 24 \, in 23 \, out 17 \, out 18 \,
+out 20 \, out 13 \, out 14 \, out 11 \, out 12 \, out 15 \, out 16
+\, out 19, f 39;
+#X text 65 11 Initialize digital I/O;
+#X connect 0 0 2 0;
+#X connect 2 0 1 0;
