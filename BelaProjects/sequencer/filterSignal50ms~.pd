@@ -1,0 +1,11 @@
+#N canvas 730 532 436 181 12;
+#X msg 68 71 \$1 50;
+#X obj 68 101 line~;
+#X obj 71 51 hsl 128 15 0 10 0 0 empty empty Limit\\\ from\\\ 0\\\ to\\\ 10
+-2 -8 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 68 13 inlet;
+#X obj 67 130 outlet~;
+#X connect 0 0 1 0;
+#X connect 1 0 4 0;
+#X connect 2 0 0 0;
+#X connect 3 0 2 0;

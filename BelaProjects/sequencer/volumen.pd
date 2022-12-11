@@ -1,0 +1,14 @@
+#N canvas 1415 32 450 348 12;
+#X obj 182 13 loadbang;
+#X obj 13 210 *~;
+#X obj 13 12 inlet~;
+#X obj 13 271 outlet~;
+#X obj 68 13 inlet amplitude;
+#X msg 95 62 0.6;
+#X obj 68 119 filterSignal50ms~;
+#X connect 0 0 5 0;
+#X connect 1 0 3 0;
+#X connect 2 0 1 0;
+#X connect 4 0 6 0;
+#X connect 5 0 6 0;
+#X connect 6 0 1 1;
