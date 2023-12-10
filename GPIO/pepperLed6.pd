@@ -1,0 +1,4 @@
+#N canvas 26 26 450 300 12;
+#X obj 16 8 inlet;
+#X obj 16 36 s bela_digitalOut11;
+#X connect 0 0 1 0;
